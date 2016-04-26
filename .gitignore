@@ -1,0 +1,12 @@
+Debug/
+Release/
+Release-*/
+zalgopie.png
+noise.wav
+music2.ogg
+youdied.ogg
+*.depend
+*.layout
+*.dll
+*.exe
+*.o

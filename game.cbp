@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Debug/game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config --libs allegro-5.0 allegro_acodec-5.0 allegro_audio-5.0 allegro_font-5.0 allegro_image-5.0 allegro_primitives-5.0 allegro_memfile-5`" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="Luna2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DALLEGRO_STATICLINK" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`pkg-config --libs --static allegro-static-5 allegro_image-static-5 allegro_audio-static-5 allegro_acodec-static-5 allegro_font-static-5 allegro_primitives-static-5 allegro_memfile-static-5`" />
+				</Linker>
+			</Target>
+			<Target title="Release-mingw-static">
+				<Option output="Luna 2.exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="Release-mingw-static/" />
+				<Option type="0" />
+				<Option compiler="mingw_cross-compiler" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DALLEGRO_STATICLINK" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-mwindows" />
+					<Add option="-static" />
+					<Add library="allegro-static" />
+					<Add library="allegro_primitives-static" />
+					<Add library="allegro_memfile-static" />
+					<Add library="uuid" />
+					<Add library="kernel32" />
+					<Add library="winmm" />
+					<Add library="psapi" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="advapi32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="allegro_acodec-static" />
+					<Add library="allegro_audio-static" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="allegro_image-static" />
+					<Add library="allegro_font-static" />
+					<Add library="FLAC" />
+					<Add library="jpeg" />
+					<Add library="ogg" />
+					<Add library="png" />
+					<Add library="z" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-Wno-trigraphs" />
+		</Compiler>
+		<Unit filename="src/data/dead.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/data/dead.h" />
+		<Unit filename="src/data/level.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/data/level.h" />
+		<Unit filename="src/data/main_gfx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/data/main_gfx.h" />
+		<Unit filename="src/data/music.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/data/music.h" />
+		<Unit filename="src/data/sprites.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/data/sprites.h" />
+		<Unit filename="src/game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/game.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/player.h" />
+		<Unit filename="src/resource.rc">
+			<Option target="Release-mingw-static" />
+		</Unit>
+		<Unit filename="src/state.h" />
+		<Unit filename="src/states/deadstate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/states/deadstate.h" />
+		<Unit filename="src/states/gamestate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/states/gamestate.h" />
+		<Unit filename="src/states/scarestate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/states/scarestate.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
