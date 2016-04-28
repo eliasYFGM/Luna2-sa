@@ -2,6 +2,6 @@
 #define _LEVEL_H_INCLUDED
 
 extern unsigned int level_txt_length;
-extern unsigned char level_txt_data[];
+extern unsigned char level_txt_data[34547];
 
 #endif /* _LEVEL_H_INCLUDED */

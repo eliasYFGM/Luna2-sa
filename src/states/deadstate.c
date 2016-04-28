@@ -3,6 +3,7 @@
 #include <allegro5/allegro_audio.h>
 #include "deadstate.h"
 #include "../game.h"
+
 #include "../data/dead.h"
 
 static struct // Data

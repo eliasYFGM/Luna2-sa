@@ -13,6 +13,7 @@
 #include "gamestate.h"
 #include "scarestate.h"
 #include "deadstate.h"
+
 #include "../data/main_gfx.h"
 #include "../data/music.h"
 #include "../data/level.h"

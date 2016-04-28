@@ -3,6 +3,7 @@
 #include "game.h"
 #include "states/gamestate.h"
 #include "states/deadstate.h"
+
 #include "data/sprites.h"
 
 struct Player
