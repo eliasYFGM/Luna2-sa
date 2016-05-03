@@ -262,8 +262,8 @@ void set_bg_color(ALLEGRO_COLOR color)
     game.bg_color = color;
 }
 
-ALLEGRO_BITMAP*
-bitmap_from_data(unsigned char* data, unsigned int length, const char* type)
+ALLEGRO_BITMAP* bitmap_from_data(void* data, unsigned int length,
+  const char* type)
 {
     ALLEGRO_BITMAP* bmp = NULL;
 

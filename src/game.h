@@ -31,7 +31,7 @@ int game_init(struct Game_Config* config, int argc, char** argv);
 void game_run();
 void game_over();
 void set_bg_color(ALLEGRO_COLOR);
-ALLEGRO_BITMAP* bitmap_from_data(unsigned char* data, unsigned int length, const char* type);
+ALLEGRO_BITMAP* bitmap_from_data(void*, unsigned int length, const char* type);
 
 struct State;
 
