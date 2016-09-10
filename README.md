@@ -1,4 +1,4 @@
 # Luna 2 stand-alone
-This project is a stand-alone version of https://github.com/eliasYFGM/Luna2
+This is a stand-alone version of https://github.com/eliasYFGM/Luna2 meant to not depend on any libraries nor external data files (a single, statically-linked executable).
 
-It is meant to not depend on any libraries nor external data files.
+Data files generated with https://github.com/eliasYFGM/Any2c-GUI
